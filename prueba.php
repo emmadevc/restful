@@ -3,7 +3,7 @@ $credentials = array(
     "user" => "Subrogado", 
     "password" => "pruebas"
   );
-  $data = array('systemRequest' =>$credentials , );
+  $data = array('systemRequest' =>$credentials);
   $data =json_encode($data);
   
   $url="http://medicallife.sybi.mx/APIRest/Subrogados/public/login/access";
