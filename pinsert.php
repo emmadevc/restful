@@ -1,30 +1,29 @@
 <?php
-$patient = array(
-  "idPetition" : "32", 
-  "card" : "00005555", 
-  "medicalUnit" :  "Unidad Venustiano Carranza Arenal", 
-  "name" : "Juan",
-  "lastName" : "Perez",
-  "lastNameM" : "Prado",
-  "gender" : "Masculino",
-  "dateBirth" : "1988-12-30",
-  "stateBirth" : "CDMX",
-  "cell" : "1234567890",
-  "landline" : "1234567890",
-  "email" : "prueba@prueba.com.mx",
-  "rfc" : "1234567890",
-  "scholarship": "Secundaria",
-  "maritalStatus" : "Soltero",
-  "curp" : "123456789012345678",
-  "postalCode" : "12345",
-  "suburb" : "ADOLFO LOPEZ MATEOS",
-  "municipality" : "Venustiano Carranza",
-  "state" : "CIUDAD DE MEXICO",
-  "street" : "DONATO MIRANDA FONSECA",   
-  "extNumber" : "3004"                                          
+$patient = array( 
+  "idPetition" => "32", 
+  "card" => "00005555", 
+  "medicalUnit" => "Unidad Venustiano Carranza Arenal", 
+  "name" => "Juan",
+  "lastName" => "Perez",
+  "lastNameM" => "Prado",
+  "gender" => "Masculino",
+  "dateBirth" => "1988-12-30",
+  "stateBirth" => "CDMX",
+  "cell" => "1234567890",
+  "landline" => "1234567890",
+  "email" => "prueba@prueba.com.mx",
+  "rfc" => "1234567890",
+  "scholarship" => "Secundaria",
+  "maritalStatus" => "Soltero",
+  "curp" => "123456789012345678",
+  "postalCode" => "12345",
+  "suburb" => "ADOLFO LOPEZ MATEOS",
+  "municipality" => "Venustiano Carranza",
+  "state" => "CIUDAD DE MEXICO",
+  "street" => "DONATO MIRANDA FONSECA",   
+  "extNumber" => "3004"     
 );
-
-$data = array('patient' =>$patient );
+$data = array('patient' => $patient);
 $data =json_encode($data);
 
 $url="http://medicallife.sybi.mx/APIRest/Subrogados/public/registraPaciente";
@@ -44,10 +43,9 @@ $err = curl_error($ch);
 curl_close($ch);
 
 if ($err) {
-echo "cURL Error #:" . $err;
+  echo "cURL Error #:" . $err;
 } else {
-//var_dump($response);
-echo $response;
-} 
-  
+  //var_dump($response);
+  echo $response;
+}   
 ?>
