@@ -1,7 +1,7 @@
 <?php
 $patient = array( 
-  "idPetition" => "32", 
-  "card" => "00005555", 
+  "idPetition" => "49", 
+  "card" => "00005559", 
   "medicalUnit" => "Unidad Venustiano Carranza Arenal", 
   "name" => "Juan",
   "lastName" => "Perez",
@@ -12,7 +12,7 @@ $patient = array(
   "cell" => "1234567890",
   "landline" => "1234567890",
   "email" => "prueba@prueba.com.mx",
-  "rfc" => "1234567890",
+  "rfc" => "1234567899",
   "scholarship" => "Secundaria",
   "maritalStatus" => "Soltero",
   "curp" => "123456789012345678",
