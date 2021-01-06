@@ -1,5 +1,5 @@
 <?php
-    $url = "10.42.0.222/rest/";
+    $url = "localhost/rest/";
     $ch = curl_init();
 
     curl_setopt($ch, CURLOPT_URL, $url);

@@ -116,12 +116,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'DELETE')
 if ($_SERVER['REQUEST_METHOD'] == 'PUT')
 {
     $input = $_GET;
-    $postId = $input['CURP'];
+    $postId = $input['RFC'];
     $fields = getParams($input);
 
     $sql = "UPDATE beneficiarios
           SET $fields
-          WHERE CURP='$postId'
+          WHERE RFC='$postId'
            ";
 
     $statement = $dbConn->prepare($sql);

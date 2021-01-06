@@ -26,7 +26,8 @@ $credentials = array(
     echo "cURL Error #:" . $err;
   } else {
     //var_dump($response);
-    echo $response;
+    $res = json_decode( $response , true );
+    echo $res['id'];
   } 
   
 ?>
