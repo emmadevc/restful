@@ -26,7 +26,7 @@ $patient = array(
 $data = array('patient' => $patient);
 $data =json_encode($data);
 
-$url="http://medicallife.sybi.mx/APIRest/Subrogados/public/registraPaciente";
+$url="";
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
