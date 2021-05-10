@@ -6,7 +6,7 @@ $credentials = array(
   $data = array('systemRequest' =>$credentials);
   $data =json_encode($data);
   
-  $url="http://medicallife.sybi.mx/APIRest/Subrogados/public/login/access";
+  $url="";
   $ch = curl_init();
   curl_setopt($ch, CURLOPT_URL, $url);
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
