@@ -1,9 +1,9 @@
 <?php
 
 $db = [
-    'host' => '10.42.0.222',
+    'host' => 'localhost',
     'username' => 'root',
-    'password' => 'pgm3satvc',
+    'password' => '',
     'db' => 'unidad_salud' //Cambiar al nombre de tu base de datos
 ];
 
